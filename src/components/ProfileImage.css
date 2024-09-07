@@ -1,0 +1,66 @@
+/* Profile Image Container */
+.profile-image-container {
+  display: flex;
+  flex-direction: column; /* Stack heading on top */
+  gap: 20px; /* Space between heading and file input/image wrapper */
+  margin-bottom: 10px; /* Space below the container */
+}
+
+/* Styling the Heading */
+.profile-image-container h3 {
+  margin: 0; /* Removes default margin */
+  font-size: 1.5rem; /* Larger font size */
+  color: #fff; /* White text color */
+}
+
+/* Container for File Input and Profile Image */
+.file-image-wrapper {
+  display: flex;
+  align-items: center; /* Vertically center items */
+  gap: 20px; /* Space between file input and profile image */
+}
+
+/* Styling the File Input */
+.profile-image-container input[type="file"] {
+  flex: 1; /* Allows the input to take available space */
+  max-width: 300px; /* Limits the max width of the input */
+  padding: 12px; /* Adds padding inside the input */
+  border: 2px solid #007BFF; /* Blue border for the input */
+  border-radius: 8px; /* Rounds the corners of the input */
+  background-color: #f0f8ff; /* Light blue background */
+  font-size: 1rem; /* Increases font size */
+  color: #333; /* Dark text color */
+  cursor: pointer; /* Changes cursor to pointer */
+  transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.profile-image-container input[type="file"]::file-selector-button {
+  border: none;
+  background-color: #007BFF; /* Blue button background */
+  color: #fff; /* White text color */
+  padding: 10px 20px; /* Padding for the button */
+  border-radius: 8px; /* Rounds the corners of the button */
+  cursor: pointer; /* Changes cursor to pointer */
+  font-size: 1rem; /* Font size of the button */
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.profile-image-container input[type="file"]::file-selector-button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Styling the Profile Image */
+.profile-image-container img {
+  max-width: 120px; /* Limits the size of the profile image */
+  height: auto; /* Maintains aspect ratio */
+  border-radius: 50%; /* Makes the image circular */
+  border: 4px solid #f5a623;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .file-image-wrapper {
+    flex-direction: column; /* Stack file input and profile image vertically on small screens */
+    align-items: flex-start; /* Align items to the start */
+  }
+}

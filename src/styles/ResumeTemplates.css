@@ -1,0 +1,23 @@
+.template1 {
+    font-family: Arial, sans-serif;
+    color: #333;
+    padding: 20px;
+    border: 1px solid #ccc;
+  }
+  
+  .template2 {
+    font-family: 'Georgia', serif;
+    color: #555;
+    padding: 20px;
+    border: 1px solid #444;
+    background-color: #f9f9f9;
+  }
+  
+  .template3 {
+    font-family: 'Courier New', monospace;
+    color: #222;
+    padding: 20px;
+    border: 2px dashed #666;
+    background-color: #fff7e6;
+  }
+  

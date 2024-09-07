@@ -1,0 +1,33 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .home-page {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+  }
+  
+  .resume-form {
+    flex: 1;
+    margin-right: 20px;
+  }
+  
+  .resume-preview {
+    flex: 1;
+    border: 1px solid #ddd;
+    padding: 20px;
+  }
+  
+  .download-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
